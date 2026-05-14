@@ -20,7 +20,7 @@ Proyek ini dibuat sebagai tugas PETA website statis bertema permasalahan dunia n
 
 - **HTML5** — struktur konten
 - **TailwindCSS** — styling & layout
-- **JavaScript** — navigasi antar halaman, kuis interaktif, checklist, filter konten
+- **JavaScript** — fungsi simpel
 
 ---
 
