@@ -24,36 +24,24 @@ Proyek ini dibuat sebagai tugas PETA website statis bertema permasalahan dunia n
 
 ---
 
-## Fitur Interaktif
-
-- Kuis "mana yang ditulis AI?"
-- Checklist kemampuan berpikir kritis
-- Navigasi SPA sederhana tanpa reload halaman
-
----
-
-## Cara Menjalankan
-
-Tidak memerlukan instalasi apapun. Cukup buka file `index.html` di browser.
-
-```
-buka index.html → selesai
-```
-
----
-
 ## Tim
 
-| Nama | Peran |
-|------|-------|
-| [Nama 1] | Layout & Home |
-| [Nama 2] | Artikel 1 — Definisi |
-| [Nama 3] | Artikel 2 — Masalah |
-| [Nama 4] | Artikel 3 — Solusi |
-| [Nama 5] | Halaman Interaktif (JS) |
-| [Nama 6+] | Konten, QA, Desain |
+| Nama |
+|------|
+| [Haekal Abdillah Ramadhan]
+| [Aprilizza Auliya]
+| [Annisa Rohiimah Sufriyani]
+| [Tryanda Finoza Dewantara]
+| [Rafi Andika]
+| [Ni Kadek Ayu Sri Saraswati]
+| [Maqbul Fath]
+| [Fainaya Fadillah]
+| [Thoriq Sulthan Hafizh Satria]
+| [Nadhif Arwendo]
+| [Afsha Dwi Saputra]
+| [Muhammad Rafif Al-Falah]
 
-**Kelompok:** [Nama Kelompok]  
+**Kelompok:** [Ruby]  
 **Program Studi:** Teknik Informatika  
 **Institusi:** Universitas Bengkulu  
 **Tahun:** 2025
@@ -62,12 +50,11 @@ buka index.html → selesai
 
 ## Sumber Referensi
 
+- What are AI Hallucinations? — ibm.com
 - AI Incidents Database — incidentdatabase.ai
-- MIT Technology Review — technologyreview.com
-- The Conversation — theconversation.com
-- Futurism — futurism.com
-- Tirto.id & Katadata.co.id
+- "Isolated Examples": Google After AI Search Tells Users To Glue Pizza, Eat Rocks — ndtv.com
+- Google goes viral after AI says to put glue on pizza, eat rocks — ia.acs.org.au
+- Google’s AI Overviews Said to Suffer From AI Hallucination, Advises Using Glue on Pizza - Gadget360.com
+- Google’s “AI Overview” can give false, misleading, and dangerous answers - ArsTechnica.com
 
 ---
-
-> *"AI seharusnya membuat kita lebih pintar, bukan lebih malas berpikir."*
