@@ -14,6 +14,8 @@ Proyek ini dibuat sebagai tugas PETA website statis bertema permasalahan dunia n
 
 **Solusi yang ditawarkan:** Edukasi berbasis artikel, panduan praktis, dan elemen interaktif untuk melatih kemampuan berpikir kritis terhadap output AI.
 
+[Akses di sini: https://haekalar.github.io/Hallucinated/]
+
 ---
 
 ## Teknologi
