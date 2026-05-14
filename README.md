@@ -28,18 +28,19 @@ Proyek ini dibuat sebagai tugas PETA website statis bertema permasalahan dunia n
 
 | Nama |
 |------|
-| [Haekal Abdillah Ramadhan]
-| [Aprilizza Auliya]
-| [Annisa Rohiimah Sufriyani]
-| [Tryanda Finoza Dewantara]
-| [Rafi Andika]
-| [Ni Kadek Ayu Sri Saraswati]
-| [Maqbul Fath]
-| [Fainaya Fadillah]
-| [Thoriq Sulthan Hafizh Satria]
-| [Nadhif Arwendo]
-| [Afsha Dwi Saputra]
-| [Muhammad Rafif Al-Falah]
+| [Rusydi Muhammad akmal (PK)]
+| [Haekal Abdillah Ramadhan (004)]
+| [Aprilizza Auliya (007)]
+| [Annisa Rohiimah Sufriyani (013)]
+| [Tryanda Finoza Dewantara (017)]
+| [Rafi Andika (048)]
+| [Ni Kadek Ayu Sri Saraswati (053)]
+| [Maqbul Fath (056)]
+| [Fainaya Fadillah (064)]
+| [Thoriq Sulthan Hafizh Satria (076)]
+| [Nadhif Arwendo (077)]
+| [Afsha Dwi Saputra (101)]
+| [Muhammad Rafif Al-Falah (116)]
 
 **Kelompok:** [Ruby]  
 **Program Studi:** Teknik Informatika  
