@@ -1,40 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website edukasi tentang AI Hallucination dan risiko misinformasi digital.">
     <title>Hallucinated | Ruby</title>
+    <link rel="icon" href="public/ruby.svg">
     <link rel="stylesheet" href="style.css">
     <!-- Were using TailwindCSS CDN! -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Icons from FontAwesome -->
     <script src="https://kit.fontawesome.com/9670f11b24.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div id="container" class="bg-[#131418] w-full min-h-screen md:py-4 md:px-64 flex flex-col gap-10">
+    <div class="bg"></div>
+    <div id="container" class="bg-[#131418] w-full min-h-screen md:py-4 md:px-64 flex flex-col gap-10 z-10 px-7">
         <!-- Navbar -->
-        <div class="w-full h-fit text-white flex items-center gap-2 pb-10">
-            <i class="fa-regular fa-gem text-red-500 text-xl"></i>
-            <p class="text-red-500 font-medium text-sm">By Ruby</p>
+        <div
+            class="w-fit h-fit text-white flex items-center justify-center gap-2 mt-7 mb-10 px-4 py-2 rounded-full border border-red-400 z-10 bg-red-400/10">
+            <i class="fa-regular fa-gem text-red-400 md:text-xl text-md"></i>
+            <p class="text-red-400 font-medium md:text-sm text-xs">Ruby</p>
         </div>
         <!-- Header -->
-        <div class="header">
+        <div class="header z-10">
             <!-- Title -->
             <div class="flex flex-col justify-center gap-2">
                 <h3 class="text-[whitesmoke] font-bold text-2xl">AI Hallucination dan Risiko Misinformasi Digital</h3>
-                <p class="text-gray-500 text-sm font-medium">Tanggal using js goes here don't ever forget <span class="bg-indigo-500/30 rounded-xs text-sky-600 px-2">Last updated: May 13, 2026</span></p>
+                <p id="date" class="text-gray-500 md:text-sm text-xs font-medium"></p>
+                <div
+                    class="flex flex-wrap gap-2 md:gap-4 pt-2 text-[#131418] font-medium">
+                    <span
+                        class="bg-red-400 w-fit flex items-center px-3 py-1 md:px-4 md:py-2 text-[10px] md:text-xs rounded-full hover:bg-transparent hover:text-red-400 transition-all duration-300 border border-red-400 hover:cursor-default">
+                        <p>Technologies</p>
+                    </span>
+                    <span class="bg-[#3B9781] w-fit flex items-center px-3 py-1 md:px-4 md:py-2 text-[10px] md:text-xs rounded-full hover:bg-transparent hover:text-[#3B9781] transition-all duration-300 border border-[#3B9781] hover:cursor-default">
+                        <p>Artificial Intelligence</p>
+                    </span>
+                    <span class="bg-[#5686D8] w-fit flex items-center px-3 py-1 md:px-4 md:py-2 text-[10px] md:text-xs rounded-full hover:bg-transparent hover:text-[#5686D8] transition-all duration-300 border border-[#5686D8] hover:cursor-default">
+                        <p>Misinformation</p>
+                    </span>
+                    <span class="bg-[#917EE5] w-fit flex items-center px-3 py-1 md:px-4 md:py-2 text-[10px] md:text-xs rounded-full hover:bg-transparent hover:text-[#917EE5] transition-all duration-300 border border-[#917EE5] hover:cursor-default">
+                        <p>Digital Risk</p>
+                    </span>
+                    <span class="bg-[#F26998] w-fit flex items-center px-3 py-1 md:px-4 md:py-2 text-[10px] md:text-xs rounded-full hover:bg-transparent hover:text-[#F26998] transition-all duration-300 border border-[#F26998] hover:cursor-default">
+                        <p>Cyber Awareness</p>
+                    </span>
+                    <span class="bg-[#FFC19F] w-fit flex items-center px-3 py-1 md:px-4 md:py-2 text-[10px] md:text-xs rounded-full hover:bg-transparent hover:text-[#FFC19F] transition-all duration-300 border border-[#FFC19F] hover:cursor-default">
+                        <p>Ethics</p>
+                    </span>
+                </div>
             </div>
         </div>
         <!-- Content -->
-        <div class="text-gray-400 flex flex-col justify-center gap-7">
+        <div class="text-gray-400 flex flex-col justify-center gap-7 md:text-base text-sm">
             <!-- Daging -->
             <p>
-                Ada kalanya ketika mahasiswa mendapatkan tugas yang terlalu banyak, menggunakan AI (<span class="italic">Artificial Inteligence</span>) untuk membantu pengerjaan tugas tersebut agar cepat selesai, atau bahkan terlalu bergantung sehingga menyerahkan kesluruhan tugas kepada AI yang digunakan untuk diselesaikan. Penggunaan AI sebagai alat untuk membantu tidaklah salah, yang salah adalah ketika mahasiswa tersebut terlalu bergantung kepada AI, menjadikannya sebagai pengganti untuk membuat tugas. <b class="text-gray-300">AI bisa salah</b>. Inilah yang disebut dengan fenomena <b class="text-gray-300">AI Hallucination</b>.
+                Ada situasi di mana mahasiswa menghadapi banyak tugas, dan mereka memanfaatkan AI (<i>Artificial
+                    Intelligence</i>) untuk mempercepat penyelesaian tugas-tugas tersebut, atau bahkan menjadi terlalu
+                bergantung sehingga menyerahkan sepenuhnya tugas kepada AI yang digunakan. Memanfaatkan AI sebagai alat
+                bantu bukanlah hal yang keliru, namun yang jadi masalah adalah ketika mahasiswa menjadi sangat
+                tergantung pada AI dan menjadikannya sebagai pengganti dalam menyelesaikan tugas-tugas. AI juga bisa
+                mengalami kesalahan. Inilah yang disebut sebagai fenomena <b class="text-gray-300">AI Hallucination</b>.
             </p>
             <p>
-                AI Hallucination merupakan sebuah fenomena dimana Large Language Model (LLM) seringkali dalam bentuk <i>generative</i> AI chatbot memberikan informasi palsu, <i>nonsense</i>, atau tidak nyata, namun menyajikannya kepada pengguna dengan sangat meyakinkan seolah-olah adalah informasi tersebut faktual dan benar adanya. Biasanya, jika seorang pengguna membuat permintaan (atau sering disebut dengan <i>prompting</i>)
+                AI Hallucination adalah suatu kejadian di mana Large Language Model (LLM), khususnya dalam bentuk
+                chatbot generatif, sering kali menyajikan informasi yang salah, tidak relevan, atau tidak nyata, tetapi
+                menampilkannya kepada pengguna dengan cara yang sangat meyakinkan seolah-olah itu adalah fakta yang
+                akurat. Umumnya, ketika seorang pengguna mengajukan permintaan (yang sering disebut prompting), mereka
+                mengharapkan hasil yang sesuai dengan apa yang mereka minta. Namun, terkadang algoritma AI memberikan
+                hasil yang tidak sesuai dengan pelatihan yang telah dilakukan, sehingga menghasilkan respons yang
+                sembarangan, atau dengan kata lain, berhalusinasi (kata Hallucination berasal dari sini! ).
+            </p>
+            <p>
+                Memang, sebuah nama yang aneh untuk sebuah fenomena digital, apalagi kata "Hallucination" seringkali
+                dikaitkan dengan manusia atau hewan, bukan mesin. Namun, dari sudut pandang metafora, "Hallucination"
+                menggambarkan fenomena pemberian output <i>nonsense</i> ini secara akurat, terutama pada kasus <i>image
+                    and pattern recognition</i>. Jika pengguna, apalagi seorang mahasiswa yang terlalu bergantung dengan
+                AI sampai menyerahkan seluruh tugasnya kepada AI secara buta, akan sangat merugi. Bisa saja AI
+                memasukkan informasi salah yang dibalut dengan kata-kata meyakinkan ke dalam tugas, sehingga merusak
+                keseluruhan isi dari tugas tersebut. Inilah mengapa <i>re-check</i> itu sangat penting ketika
+                mengerjakan sesuatu, agar kesalahan yang terdapat pada pekerjaan dapat diperbaiki.
+            </p>
+            <p>
+                AI Hallucination hampir sama dengan bagaimana manusia kadang-kadang melihat wajah pada awan atau bulan.
+                Pada kasus AI, hal ini dapat terjadi karena adanya misinterpretasi yang terjadi karena banyak faktor,
+                seperti <i class="font-bold text-gray-300">overfitting, training data bias/inaccuracy</i>, dan <i
+                    class="font-bold text-gray-300">high model complexity</i>.
+            </p>
+            <p>
+                Kejadian AI Hallucination telah sering terjadi, khususnya pada model chatbot AI versi beta. Salah satu
+                contohnya adalah Bard (yang sekarang dikenal sebagai Gemini) yang terintegrasi dalam browser Google,
+                Chrome, yang memberikan rekomendasi untuk menambahkan lem ke dalam pizza agar keju melekat dengan baik.
+                Ternyata, hal ini terjadi karena Google bekerja sama dengan Reddit, di mana pencarian pertanyaan akan
+                menampilkan Reddit sebagai hasil teratas, dan secara kebetulan Bard mengambil jawaban sarkastik dari
+                seorang pengguna Reddit, kemudian menyajikannya sebagai fakta di halaman AI Overview. Selain itu, Bard
+                dalam AI Overview di Google juga pernah merekomendasikan untuk mengonsumsi kerikil kecil setiap hari
+                demi menjaga kesehatan. Bard bahkan merujuk kepada seorang dokter yang menyatakan bahwa kerikil kecil
+                adalah sumber vitamin, dan penting untuk sistem pencernaan manusia, yang sebenarnya juga merupakan AI
+                Hallucination.
+            </p>
+            <!-- Image Proof -->
+            <div
+                class="flex flex-col gap-4 p-4 bg-[#060606] border border-[#202020] rounded-md items-center justify-center z-10">
+                <div class="bg-[#131418] p-4 w-full h-fit rounded-md">
+                    <h4 class="font-bold">Beberapa bukti tangkapan layar tentang AI Hallucination (sumber: <a
+                            href="https://ia.acs.org.au/article/2024/google-goes-viral-after-ai-says-to-put-glue-on-pizza-eat-rocks.html?utm_source=chatgpt.com"
+                            class="underline text-indigo-300" target="_blank" rel="noopener">InformationAge</a> )</h4>
+                </div>
+                <div class="imgs md:flex-row flex flex-col gap-4">
+                    <img src="./public/proof1.png" alt="proof1" class="rounded-lg md:h-90 h-full">
+                    <img src="./public/proof2.png" alt="proof2" class="rounded-lg md:h-90 h-full">
+                    <img src="./public/proof3.png" alt="proof3" class="rounded-lg md:h-90 h-full">
+                </div>
+            </div>
+
+            <!-- Back to Daging -->
+            <p class="z-10 md:text-base text-sm">
+                Mengapa AI Hallucination bisa berbahaya? Tentu saja karena banyak sekali hal yang dapat terjadi
+                tergantung apa output dari <i>generative</i> AI chatbot tersebut.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7 border-b border-[#303030] pb-10">
+                <div class="bg-red-400 text-[#131418] transition-all duration-300 p-4 rounded-xl hover:-translate-y-2 hover:border-white/10 hover:shadow-2xl h-full">
+                    <h4 class="text-lg font-bold pb-2">Misinformasi</h4>
+                    <p>AI pada dasarnya tidak mengerti output yang mereka keluarkan, mereka sangat bergantung dengan
+                        dataset pada saat training. Pengguna yang cerdas <b class="text-black">harus</b> melakukan
+                        pengecekan ulang terhadap informasi yang diberikan.</p>
+                </div>
+                <div
+                    class="bg-[#5686D8] text-[#131418] transition-all duration-300 p-4 rounded-md hover:translate-y-[-10px] h-full">
+                    <h4 class="text-lg font-bold pb-2">Menurunkan Tingkat Kepercayaan Terhadap AI</h4>
+                    <p>Jika laporan tentang AI Hallucination sudah sangat banyak, orang-orang tentu saja akan mulai
+                        sadar betapa tidak <i>reliable</i>-nya alat modern ini.</p>
+                </div>
+                <div
+                    class="xl:row-span-2 bg-red-400 text-[#131418] transition-all duration-300 p-4 rounded-md hover:translate-y-[-10px] h-full">
+                    <h4 class="text-lg font-bold pb-2">Kebergantungan AI</h4>
+                    <p>Berbanding terbalik dengan yang tadi, jika laporan sedikit maka orang akan mengira output AI
+                        selalu benar, <i>thus</i> meningkatkan kebergantungan pada AI. Dengan respons AI yang sangat
+                        cepat, orang-orang pastinya akan sering digunakan banyak orang dan menurunkan kemampuan risiko
+                        berpikir kritis, karena semua output diterima tanpa dianalisis kembali.</p>
+                </div>
+                <div
+                    class="xl:col-span-2 bg-[#5686D8] text-[#131418] transition-all duration-300 p-4 rounded-md hover:translate-y-[-10px] h-full">
+                    <h4 class="text-lg font-bold pb-2">Risiko Kesalahan Mengambil Keputusan</h4>
+                    <p>Sebagai contoh, orang-orang yang bertanya soal <i>hardware error</i> pada AI dapat berujung
+                        kerusakan, mahasiswa yang diberikan referensi palsu, orang tua mengikuti saran kesehatan yang
+                        tidak benar.</p>
+                </div>
+            </div>
+            <div class="md:text-base text-sm z-10">
+                <p>
+                    Lalu, <b class="text-gray-300">apa solusi dari permasalahan ini?</b>
+                    <br>
+                    Solusi pertama dan yang paling utama, tentu saja, dengan melakukan verifikasi ulang. Sebagai
+                    pengguna
+                    yang cerdas, kita sangat perlu melakukan verifikasi ulang, tidak hanya terhadap output AI, melainkan
+                    juga terhadap semua informasi dan berita yang di dapatkan. Keaslian sebuah informasi dapat dicek
+                    melalui
+                    sumber terpercaya, seperti <b class="text-gray-300">jurnal, buku, website resmi, dan atau artikel
+                        dari
+                        institusi terpercaya</b>. Verifikasi itu sangat penting, terutama untuk informasi pendidikan,
+                    kesehatan, hukum, dan berita.
+                </p>
+                <p>
+                    Selain itu, gunakan AI sebagai alat bantu dan bukan pengganti. AI dapat digunakan sebagai pembantu
+                    dalam
+                    merangkum materi, mencari ide, mempercepat pekerjaan, tetapi tidak untuk mengerjakan keseluruhan
+                    pekerjaan. Selain itu, penggunaan perintah atau <b class="text-gray-300">prompt</b> yang benar dan
+                    jelas
+                    juga sangat penting. Perintah yang tidak jelas atau kurang lengkap akan mengarah pada output yang
+                    asal-asalan. Pengguna perlu menambahkan hal spesifik agar AI dapat mengerti apa keinginan pengguna
+                    yang
+                    sebenarnya.
+                </p>
+            </div>
+        </div>
+        <!-- Harapan -->
+        <div class="text-gray-400 flex flex-col justify-center gap-7 z-10 border-b border-[#303030] pb-10 md:text-base text-sm">
+            <p><b class="text-gray-300">Harapan kami</b>, <br> AI adalah salah satu inovasi yang mengalami kemajuan luar
+                biasa dalam era digital sekarang ini dan telah
+                memberi manfaat bagi manusia di berbagai sektor, seperti pendidikan, pekerjaan, komunikasi, dan
+                pencarian informasi. Kehadiran AI memudahkan banyak tugas karena mampu mempercepat dan meningkatkan
+                efisiensi pekerjaan. Namun, di balik segala keuntungan tersebut, teknologi AI juga memiliki sejumlah
+                kelemahan, termasuk fenomena AI Hallucination yang dapat menciptakan informasi yang tidak benar atau
+                tidak tepat.
+                Dengan kemajuan teknologi di masa depan, diharapkan masyarakat dapat memanfaatkan Kecerdasan Buatan
+                dengan lebih bijaksana dan bertanggung jawab. AI seharusnya berfungsi sebagai alat pendukung dalam
+                aktivitas manusia, bukan sebagai pengganti sepenuhnya terhadap kemampuan berpikir kritis. Pengguna tetap
+                harus memverifikasi informasi yang disediakan oleh AI untuk menghindari pengaruh dari penyebaran
+                informasi yang salah.
+            </p>
+            <p>
+                Selain itu, perusahaan dan pengembang teknologi diharapkan terus memperbaiki kualitas sistem AI agar
+                lebih akurat, transparan, dan aman digunakan. Dengan adanya peningkatan teknologi yang lebih baik,
+                diharapkan risiko AI Hallucination dapat diminimalisir sehingga AI dapat memberikan informasi yang lebih
+                dapat dipercaya oleh pengguna.
+                Kesadaran masyarakat tentang pentingnya literasi digital juga menjadi sangat krusial di zaman modern
+                ini. Generasi muda diharapkan dapat memahami bagaimana AI bekerja, mengenali bahaya informasi yang tidak
+                benar, serta menggunakan teknologi dengan cerdas dan bertanggung jawab. Melalui kerja sama antara
+                manusia dan teknologi AI, perkembangan Kecerdasan Buatan di masa depan diharapkan dapat memberikan
+                manfaat yang lebih besar bagi kehidupan masyarakat tanpa mengurangi kemampuan manusia untuk berpikir,
+                menganalisis, dan mengambil keputusan secara mandiri.
             </p>
         </div>
+        <!-- Glosarium (anjay) -->
+        <div>
+            <h3 class="font-bold text-gray-300 text-lg text-center">Glosarium</h3>
+            <div class="columns-1 md:columns-2 xl:columns-3 py-4 gap-6"">
+                <div class=" text-xs font-medium text-gray-300 break-inside-avoid mb-6">
+                <!-- A -->
+                <div class="flex flex-col gap-4 py-2">
+                    <h3
+                        class="text-base text-[#131418] font-bold h-8 w-8 bg-gray-300 flex items-center justify-center rounded-full">
+                        A</h3>
+                    <!-- Glossary -->
+                    <div>
+                        <h4 class="text-sm font-semibold">AI Ethics</h4>
+                        <p class="text-gray-400 font-regular">Prinsip moral dan aturan yang mengatur penggunaan
+                            Artificial Intelligence agar aman, adil, dan tidak merugikan manusia.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold">AI Hallucination</h4>
+                        <p class="text-gray-400 font-regular">Fenomena ketika Artificial Intelligence menghasilkan
+                            informasi yang salah, tidak akurat, atau tidak nyata tetapi menyampaikannya seolah-olah
+                            benar dan meyakinkan.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold">AI Overview</h4>
+                        <p class="text-gray-400 font-regular">Fitur pada <i>search engine</i> Google yang menggunakan AI
+                            untuk memberikan ringkasan jawaban secara otomatis berdasarkan hasil pencarian internet.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold">Artificial Intelligence (AI)</h4>
+                        <p class="text-gray-400 font-regular">Teknologi yang memungkinkan komputer atau mesin meniru
+                            kemampuan manusia, seperti berpikir, memahami bahasa, dan menyelesaikan masalah.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-xs font-medium text-gray-300 break-inside-avoid mb-6">
+                <!-- B -->
+                <div class="flex flex-col gap-4 py-2">
+                    <h3
+                        class="text-base text-[#131418] font-bold h-8 w-8 bg-gray-300 flex items-center justify-center rounded-full">
+                        B</h3>
+                    <!-- Glossary -->
+                    <div>
+                        <h4 class="text-sm font-semibold">Bias</h4>
+                        <p class="text-gray-400 font-regular">Kecenderungan AI menghasilkan jawaban yang tidak netral
+                            atau tidak seimbang akibat data pelatihan yang kurang beragam atau tidak akurat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-xs font-medium text-gray-300 break-inside-avoid mb-6">
+                <!-- C -->
+                <div class="flex flex-col gap-4 py-2">
+                    <h3
+                        class="text-base text-[#131418] font-bold h-8 w-8 bg-gray-300 flex items-center justify-center rounded-full">
+                        C</h3>
+                    <!-- Glossary -->
+                    <div>
+                        <h4 class="text-sm font-semibold">ChatBot</h4>
+                        <p class="text-gray-400 font-regular">Program berbasis AI yang dapat berinteraksi dengan manusia
+                            melalui percakapan teks maupun suara.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-xs font-medium text-gray-300 break-inside-avoid mb-6">
+                <!-- D -->
+                <div class="flex flex-col gap-4 py-2">
+                    <h3
+                        class="text-base text-[#131418] font-bold h-8 w-8 bg-gray-300 flex items-center justify-center rounded-full">
+                        D</h3>
+                    <!-- Glossary -->
+                    <div>
+                        <h4 class="text-sm font-semibold">Dataset</h4>
+                        <p class="text-gray-400 font-regular">Kumpulan data yang digunakan untuk melatih Artificial
+                            Intelligence agar mampu mengenali pola dan menghasilkan jawaban.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold">Digital Literacy (Literasi Digital)</h4>
+                        <p class="text-gray-400 font-regular">Kemampuan seseorang dalam memahami, menggunakan,
+                            mengevaluasi, dan memverifikasi informasi digital secara bijak.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-xs font-medium text-gray-300 break-inside-avoid mb-6">
+                <!-- F -->
+                <div class="flex flex-col gap-4 py-2">
+                    <h3
+                        class="text-base text-[#131418] font-bold h-8 w-8 bg-gray-300 flex items-center justify-center rounded-full">
+                        F</h3>
+                    <!-- Glossary -->
+                    <div>
+                        <h4 class="text-sm font-semibold">Fact-Checking</h4>
+                        <p class="text-gray-400 font-regular">Proses memeriksa dan memastikan kebenaran suatu informasi
+                            menggunakan sumber terpercaya.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-xs font-medium text-gray-300 break-inside-avoid mb-6">
+                <!-- G -->
+                <div class="flex flex-col gap-4 py-2">
+                    <h3
+                        class="text-base text-[#131418] font-bold h-8 w-8 bg-gray-300 flex items-center justify-center rounded-full">
+                        G</h3>
+                    <!-- Glossary -->
+                    <div>
+                        <h4 class="text-sm font-semibold">Generative AI</h4>
+                        <p class="text-gray-400 font-regular">Jenis Artificial Intelligence yang mampu membuat atau
+                            menghasilkan konten baru, seperti teks, gambar, suara, maupun video.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-xs font-medium text-gray-300 break-inside-avoid mb-6">
+                <!-- H -->
+                <div class="flex flex-col gap-4 py-2">
+                    <h3
+                        class="text-base text-[#131418] font-bold h-8 w-8 bg-gray-300 flex items-center justify-center rounded-full">
+                        H</h3>
+                    <!-- Glossary -->
+                    <div>
+                        <h4 class="text-sm font-semibold">Human Review</h4>
+                        <p class="text-gray-400 font-regular">Proses pemeriksaan ulang hasil kerja AI oleh manusia
+                            sebelum digunakan atau dipublikasikan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-xs font-medium text-gray-300 break-inside-avoid mb-6">
+                <!-- L -->
+                <div class="flex flex-col gap-4 py-2">
+                    <h3
+                        class="text-base text-[#131418] font-bold h-8 w-8 bg-gray-300 flex items-center justify-center rounded-full">
+                        L</h3>
+                    <!-- Glossary -->
+                    <div>
+                        <h4 class="text-sm font-semibold">Large Language Model (LLM)</h4>
+                        <p class="text-gray-400 font-regular">Model AI yang dilatih menggunakan data teks dalam jumlah
+                            sangat besar untuk memahami dan menghasilkan bahasa manusia. Contohnya seperti ChatGPT dan
+                            Gemini.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-xs font-medium text-gray-300 break-inside-avoid mb-6">
+                <!-- M -->
+                <div class="flex flex-col gap-4 py-2">
+                    <h3
+                        class="text-base text-[#131418] font-bold h-8 w-8 bg-gray-300 flex items-center justify-center rounded-full">
+                        M</h3>
+                    <!-- Glossary -->
+                    <div>
+                        <h4 class="text-sm font-semibold">Misinformasi</h4>
+                        <p class="text-gray-400 font-regular">Informasi yang salah atau tidak benar dan dapat
+                            menyebabkan kesalahpahaman bagi orang lain.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-xs font-medium text-gray-300 break-inside-avoid mb-6">
+                <!-- N -->
+                <div class="flex flex-col gap-4 py-2">
+                    <h3
+                        class="text-base text-[#131418] font-bold h-8 w-8 bg-gray-300 flex items-center justify-center rounded-full">
+                        N</h3>
+                    <!-- Glossary -->
+                    <div>
+                        <h4 class="text-sm font-semibold">Neural Network</h4>
+                        <p class="text-gray-400 font-regular">Sistem komputasi yang terinspirasi dari cara kerja otak
+                            manusia dan digunakan dalam pengembangan Artificial Intelligence modern.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-xs font-medium text-gray-300 break-inside-avoid mb-6">
+                <!-- O -->
+                <div class="flex flex-col gap-4 py-2">
+                    <h3
+                        class="text-base text-[#131418] font-bold h-8 w-8 bg-gray-300 flex items-center justify-center rounded-full">
+                        O</h3>
+                    <!-- Glossary -->
+                    <div>
+                        <h4 class="text-sm font-semibold">Overfitting</h4>
+                        <p class="text-gray-400 font-regular">Kondisi ketika model AI terlalu fokus pada data pelatihan
+                            sehingga kurang mampu memberikan hasil yang akurat pada situasi baru.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-xs font-medium text-gray-300 break-inside-avoid mb-6">
+                <!-- P -->
+                <div class="flex flex-col gap-4 py-2">
+                    <h3
+                        class="text-base text-[#131418] font-bold h-8 w-8 bg-gray-300 flex items-center justify-center rounded-full">
+                        P</h3>
+                    <!-- Glossary -->
+                    <div>
+                        <h4 class="text-sm font-semibold">Pattern Recognition</h4>
+                        <p class="text-gray-400 font-regular">Kemampuan AI untuk mengenali pola tertentu dari data yang
+                            dipelajari, seperti gambar, teks, maupun suara.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold">Prompt</h4>
+                        <p class="text-gray-400 font-regular">Perintah, pertanyaan, atau instruksi yang diberikan
+                            pengguna kepada AI untuk mendapatkan respons tertentu.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold">Prompt Engineering</h4>
+                        <p class="text-gray-400 font-regular">Teknik menyusun prompt atau instruksi secara tepat agar AI
+                            menghasilkan jawaban yang lebih relevan dan akurat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-xs font-medium text-gray-300 break-inside-avoid mb-6">
+                <!-- T -->
+                <div class="flex flex-col gap-4 py-2">
+                    <h3
+                        class="text-base text-[#131418] font-bold h-8 w-8 bg-gray-300 flex items-center justify-center rounded-full">
+                        T</h3>
+                    <!-- Glossary -->
+                    <div>
+                        <h4 class="text-sm font-semibold">Training Data</h4>
+                        <p class="text-gray-400 font-regular">Data yang digunakan selama proses pelatihan AI agar sistem
+                            dapat mempelajari pola, bahasa, dan informasi tertentu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="flex items-center justify-center gap-4 pt-7 text-gray-400">
+        <span
+            class="bg-[#060606] w-fit p-4 flex items-center justify-center border-2 border-[#060606] rounded-md transition-all duration-300 hover:bg-transparent hover:text-white">
+            <i class="fa-brands fa-google-scholar text-3xl"></i>
+        </span>
+        <span
+            class="bg-[#060606] w-fit p-4 flex items-center justify-center border-2 border-[#060606] rounded-md transition-all duration-300 hover:bg-transparent hover:text-white">
+            <i class="fa-brands fa-google text-3xl"></i>
+        </span>
+        <span
+            class="bg-[#060606] w-fit p-4 flex items-center justify-center border-2 border-[#060606] rounded-md transition-all duration-300 hover:bg-transparent hover:text-white">
+            <i class="fa-brands fa-wikipedia-w text-3xl"></i>
+        </span>
+    </div>
+    <!-- Sources & References -->
+    <div
+        class="bg-[#060606] text-gray-400 flex flex-col justify-center gap-7 p-7 rounded-md border border-[#202020] z-10">
+        <h3 class="font-bold text-lg">Sumber-sumber yang digunakan</h3>
+        <div class="flex flex-col justify-center gap-4">
+            <div
+                class="w-full flex gap-2 justify-between group items-center bg-[#131418] px-7 py-4 rounded-md border border-[#202020]">
+                <span>
+                    <a href="https://ia.acs.org.au/article/2024/google-goes-viral-after-ai-says-to-put-glue-on-pizza-eat-rocks.html?utm_source=chatgpt.com"
+                        class="underline" target="_blank" rel="noopener">InformationAge</a>
+                    <i class="fa-solid fa-link"></i>
+                </span>
+                <i class="fa-solid fa-arrow-down rotate-230 group-hover:rotate-270 transition-all duration-300"></i>
+            </div>
+            <div
+                class="w-full flex gap-2 justify-between group items-center bg-[#131418] px-7 py-4 rounded-md border border-[#202020]">
+                <span>
+                    <a href="https://www.ndtv.com/world-news/isolated-examples-google-after-ai-search-tells-users-to-glue-pizza-eat-rocks-5743119?utm_source=chatgpt.com"
+                        class="underline " target="_blank" rel="noopener">NDTV World</a>
+                    <i class="fa-solid fa-link"></i>
+                </span>
+                <i class="fa-solid fa-arrow-down rotate-230 group-hover:rotate-270 transition-all duration-300"></i>
+            </div>
+            <div
+                class="w-full flex gap-2 justify-between group items-center bg-[#131418] px-7 py-4 rounded-md border border-[#202020]">
+                <span>
+                    <a href="https://www.gadgets360.com/ai/news/google-ai-overviews-hallucination-glue-on-pizza-reports-5734209?utm_source=chatgpt.com"
+                        class="underline" target="_blank" rel="noopener">Gadgets360</a>
+                    <i class="fa-solid fa-link"></i>
+                </span>
+                <i class="fa-solid fa-arrow-down rotate-230 group-hover:rotate-270 transition-all duration-300"></i>
+            </div>
+            <div
+                class="w-full flex gap-2 justify-between group items-center bg-[#131418] px-7 py-4 rounded-md border border-[#202020]">
+                <span>
+                    <a href="https://arstechnica.com/information-technology/2024/05/googles-ai-overview-can-give-false-misleading-and-dangerous-answers/?utm_source=chatgpt.com"
+                        class="underline" target="_blank" rel="noopener">ArsTechnica</a>
+                    <i class="fa-solid fa-link"></i>
+                </span>
+                <i class="fa-solid fa-arrow-down rotate-230 group-hover:rotate-270 transition-all duration-300"></i>
+            </div>
+            </span>
+        </div>
+        <!-- Footer -->
+    </div>
+    <div class="text-gray-500 text-center pt-10 z-10">
+        <p>Made with love, <span class="text-red-400">Ruby</span>, using HTML, TailwindCSS, & JavaScript.</p>
+    </div>
+
+    <script src="app.js"></script>
 </body>
+
 </html>
